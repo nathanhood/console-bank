@@ -22,10 +22,9 @@ while(!isQuit(transType)){
       alert('You have overdrawn your account. A $50 fee has been assessed. Your new balance is negative ' + '$' + currentBal * -1);
     } else if(regDraw(x,y) < -750){
       alert('You have overdrawn your account by over $750. Your account has been closed.');
-      isQuit('q');
     } else {
       currentBal = regDraw(x, y);
-      alert('Thank you. Your new balance is negative ' + '$' + currentBal * -1);
+      alert('Thank you. Your new balance is ' + '$' + currentBal);
     }
   } else {
     alert('Please enter (d)eposit or (w)ithdrawal');
